@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>TalentaEdu – Kursus SD, SMP, dan SMA di Manado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav aria-label="Navigasi utama">
+        <a class="logo" href="#beranda"><i aria-hidden="true">★</i>TalentaEdu</a>
+        <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">☰</button>
+        <div class="menu" id="menu">
+          <a href="#beranda">Beranda</a>
+          <a href="#program">Program</a>
+          <a href="#keunggulan">Keunggulan</a>
+          <a href="#faq">FAQ</a>
+          <a href="#kontak">Kontak</a>
+          <a class="btn wa" data-kelas="" href="#">Daftar</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="wrap">
+        <div>
+          <h1>Temukan Potensi Hebatmu Bersama TalentaEdu!</h1>
+          <p class="lead">Belajar lebih terarah, kembangkan kemampuan, dan raih prestasi bersama program kursus yang dirancang untuk siswa SD, SMP, dan SMA.</p>
+          <div class="row">
+            <a class="btn y" href="#program">Lihat Program Kursus</a>
+            <a class="btn w wa" data-kelas="" href="#">Daftar Sekarang</a>
+          </div>
+          <div class="chips">
+            <span class="chip">SD</span>
+            <span class="chip">SMP</span>
+            <span class="chip">SMA</span>
+            <span class="chip">📍 Megasmart, Manado</span>
+          </div>
+        </div>
+        <svg viewBox="0 0 460 400" role="img" aria-label="Ilustrasi buku belajar yang ceria dengan pensil dan bintang">
+          <circle cx="230" cy="215" r="170" fill="#fff" opacity=".55"/>
+          <g class="bob bob2"><path d="M70 90c-22 0-34 14-34 28s12 26 32 26h86c22 0 34-12 34-26s-14-30-36-28c-6-20-22-30-40-30s-34 10-42 30z" fill="#fff" stroke="#2F3A5F" stroke-width="3.5" stroke-linejoin="round"/></g>
+          <g class="bob"><path d="M390 60l12 28 30 3-23 20 7 30-26-16-26 16 7-30-23-20 30-3z" fill="#F6D77E" stroke="#2F3A5F" stroke-width="3.5" stroke-linejoin="round"/></g>
+          <g stroke="#2F3A5F" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+            <path d="M230 150c-45-28-100-26-140-6v184c40-20 95-22 140 6z" fill="#BDAEF2"/>
+            <path d="M230 150c45-28 100-26 140-6v184c-40-20-95-22-140 6z" fill="#F6D77E"/>
+            <path d="M230 150v190" fill="none"/>
+            <path d="M100 168c30-12 70-10 100 6M100 200c30-12 70-10 100 6" fill="none" opacity=".35"/>
+            <path d="M260 174c30-16 70-18 100-6M260 206c30-16 70-18 100-6" fill="none" opacity=".35"/>
+          </g>
+          <g fill="#2F3A5F"><circle cx="190" cy="250" r="9"/><circle cx="270" cy="250" r="9"/></g>
+          <g fill="#fff"><circle cx="193" cy="247" r="3"/><circle cx="273" cy="247" r="3"/></g>
+          <path d="M205 280q25 26 50 0" fill="none" stroke="#2F3A5F" stroke-width="4" stroke-linecap="round"/>
+          <ellipse cx="170" cy="276" rx="12" ry="7" fill="#F0A9A9" opacity=".7"/>
+          <ellipse cx="290" cy="276" rx="12" ry="7" fill="#F0A9A9" opacity=".7"/>
+          <g class="bob" stroke="#2F3A5F" stroke-width="3.5" stroke-linejoin="round">
+            <g transform="rotate(35 380 300)">
+              <rect x="366" y="232" width="28" height="110" rx="6" fill="#5B86E5"/>
+              <path d="M366 342h28l-14 34z" fill="#FDF4D6"/>
+              <path d="M373 362h14l-7 14z" fill="#2F3A5F"/>
+              <rect x="366" y="224" width="28" height="20" rx="6" fill="#F0A9A9"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section id="program">
+      <div class="wrap">
+        <div class="head">
+          <h2>Pilih kelas sesuai jenjang</h2>
+          <p>Setiap program berisi 4 kali pertemuan di Megasmart, Manado. Tekan Daftar untuk langsung chat admin.</p>
+        </div>
+        <div class="grid3" id="cards"></div>
+        <p class="note">Jadwal menunjukkan hari kelas yang tersedia. Konfirmasi hari pertemuan kamu ke admin lewat WhatsApp.</p>
+        <div class="sched">
+          <h3>Jadwal mingguan</h3>
+          <div class="sgrid" id="sched"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why" id="keunggulan">
+      <div class="wrap">
+        <div class="head"><h2>Kenapa belajar di TalentaEdu?</h2></div>
+        <div class="grid5" id="why"></div>
+      </div>
+    </section>
+
+    <section id="quiz">
+      <div class="wrap two">
+        <div class="card card-quiz">
+          <h2>Mini quiz: kelas yang tepat?</h2>
+          <p id="q">Anak kamu sekarang duduk di jenjang apa?</p>
+          <div class="opts" id="opts"></div>
+          <div id="res" role="status" aria-live="polite"></div>
+        </div>
+        <div class="card card-journey">
+          <h2>Perjalanan belajar</h2>
+          <ol class="path">
+            <li style="--dot:var(--yellow)"><b>SD · usia 6–12</b><span>Belajar sambil bermain, membangun dasar yang kuat.</span></li>
+            <li style="--dot:var(--blue)"><b>SMP · usia 12–15</b><span>Memahami materi sekolah dan menguatkan kemampuan akademik.</span></li>
+            <li style="--dot:var(--purple)"><b>SMA · usia 15–18</b><span>Pendalaman materi dan persiapan menghadapi ujian.</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+      <div class="wrap">
+        <div class="head"><h2>Pertanyaan yang sering muncul</h2></div>
+        <div class="faq">
+          <details>
+            <summary>Bagaimana cara mendaftar?</summary>
+            <p>Tekan tombol Daftar pada kelas pilihan. WhatsApp akan terbuka dengan pesan awal, lalu lanjutkan pendaftaran bersama admin. Tidak ada formulir panjang.</p>
+          </details>
+          <details>
+            <summary>Berapa biaya kursusnya?</summary>
+            <p>SD Rp700.000, SMP Rp900.000, dan SMA Rp1.200.000. Masing-masing untuk 4 kali pertemuan.</p>
+          </details>
+          <details>
+            <summary>Di mana lokasinya?</summary>
+            <p>Di Megasmart, Manado. Buka tautan peta di bagian Kontak untuk petunjuk arah.</p>
+          </details>
+          <details>
+            <summary>Kelas mana yang cocok untuk anak saya?</summary>
+            <p>Pilih berdasarkan jenjang sekolah: SD (6–12 tahun), SMP (12–15 tahun), SMA (15–18 tahun). Kamu juga bisa memakai mini quiz di atas.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="kontak">
+      <div class="wrap">
+        <div>
+          <h2>Siap mulai belajar?</h2>
+          <p>Chat admin sekarang, tanyakan kelas dan jadwal yang paling cocok.</p>
+          <a class="btn y wa" data-kelas="" href="#">Daftar Sekarang</a>
+        </div>
+        <div class="box">
+          <ul class="facts">
+            <li><span>💬</span><div><b>WhatsApp</b><br>0884-9442-1322</div></li>
+            <li><span>📍</span><div><b>Lokasi</b><br>Megasmart, Manado</div></li>
+          </ul>
+          <a class="btn w full" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Megasmart+Manado">Buka di Google Maps</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <b class="footer-brand">TalentaEdu</b><br>
+        Kursus SD, SMP, dan SMA<br>
+        Megasmart, Manado
+      </div>
+      <nav aria-label="Navigasi footer">
+        <a href="#program">Program</a>
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <div>WhatsApp: 0884-9442-1322<br>© 2026 TalentaEdu</div>
+    </div>
+  </footer>
+
+  <div class="fab">
+    <button class="up" id="up" aria-label="Kembali ke atas">↑</button>
+    <a class="btn wa" data-kelas="" href="#">💬 Chat WhatsApp</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
